@@ -1,6 +1,5 @@
 package com.springstartshere.example1;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,5 +8,14 @@ import lombok.Setter;
 public class Parrot {
 
     private String name;
+
+//    public Parrot() {
+//        System.out.println("Parrot created.");
+//    }
+
+    @Override
+    public String toString() {
+        return "Parrot: " + name;
+    }
 
 }

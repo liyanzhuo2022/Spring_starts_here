@@ -14,11 +14,18 @@ import org.springframework.stereotype.Component;
  * */
 public class Puppy {
 
-    private String name;
+    private String name = "Doggy";
 
-    @PostConstruct
-    public void init() {
-        this.name = "Doggy";
+    @Override
+    public String toString() {
+        return "Puppy: " + name;
     }
+
+//    /**容器加入Bean后再执行
+//     * */
+//    @PostConstruct
+//    public void init() {
+//        this.name = "Doggy";
+//    }
 
 }
